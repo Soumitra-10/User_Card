@@ -1,0 +1,166 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+   background-color: rgb(203, 250, 246);
+
+    padding: 40px 20px;
+}
+
+
+/* Form styling */
+form {
+    background: rgba(255, 255, 255, 0.9);
+
+    max-width: 500px;
+    width: 100%;
+
+    margin: 0 auto 50px;
+
+    padding: 32px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    border: 1px solid #dbeafe;
+}
+
+
+/* Form heading */
+form h2 {
+    font-size: 30px;
+
+    text-align: center;
+
+    color: #1d4ed8;
+
+    margin-bottom: 25px;
+}
+
+
+/* Input group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Label styling */
+label {
+    display: block;
+
+    color: #374151;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* Input and textarea */
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Input focus effect */
+input:focus,
+textarea:focus {
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+
+/* Textarea resize */
+textarea {
+    resize: vertical;
+}
+
+
+/* Submit button */
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: linear-gradient(
+        to right,
+        #3b82f6,
+        #a855f7
+    );
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(
+        to right,
+        #2563eb,
+        #9333ea
+    );
+
+    transform: translateY(-2px);
+}
+
+
+/* Users container */
+.users {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .users {
+        grid-template-columns: 1fr;
+    }
+
+}
